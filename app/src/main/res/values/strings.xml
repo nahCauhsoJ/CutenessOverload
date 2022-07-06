@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Cuteness Overload</string>
+
+    <string name="title_dog">Dog</string>
+    <string name="title_cat">Cat</string>
+    <string name="title_fox">Fox</string>
+    <string name="title_duck">Duck</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>
