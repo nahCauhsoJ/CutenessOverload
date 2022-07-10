@@ -13,20 +13,20 @@ import com.example.cutenessoverload.utils.ViewPagerAdapter
 import com.example.cutenessoverload.viewmodel.CuteViewModel
 import com.google.android.material.tabs.TabLayoutMediator
 
-class PicFragment : Fragment() {
-
+class SavedPicFragment : Fragment() {
     private val binding by lazy { FragmentViewPagerBinding.inflate(layoutInflater) }
     private val viewModel: CuteViewModel by activityViewModels()
 
     override fun onCreateView(
-        inflater: LayoutInflater, container: ViewGroup?,
+        inflater: LayoutInflater,
+        container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
         binding.viewPager.adapter =
             ViewPagerAdapter(
                 this,
                 ::viewPagerSwitcher,
-                pageNames.size)
+                PicFragment.pageNames.size)
 
         binding.viewPager.registerOnPageChangeCallback(
             object : ViewPager2.OnPageChangeCallback() {
@@ -44,7 +44,7 @@ class PicFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
         TabLayoutMediator(
             binding.tabLayout, binding.viewPager
-        ) { tab, pos -> tab.text = pageNames[pos] }.attach()
+        ) { tab, pos -> tab.text = PicFragment.pageNames[pos] }.attach()
     }
 
     private fun viewPagerSwitcher(position: Int) : Fragment =

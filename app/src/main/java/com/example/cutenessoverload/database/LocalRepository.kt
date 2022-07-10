@@ -16,4 +16,7 @@ class LocalRepository @Inject constructor(
 
     override suspend fun unsaveCute(cute: CuteEntity) =
         cuteDAO.unsaveCute(cute)
+
+    override suspend fun hasImage(url: String): Int =
+        cuteDAO.hasImage(url)
 }

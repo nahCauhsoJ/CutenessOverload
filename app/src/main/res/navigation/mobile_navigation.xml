@@ -6,6 +6,6 @@
     app:startDestination="@id/allPicFragment">
     <fragment
         android:id="@+id/allPicFragment"
-        android:name="com.example.cutenessoverload.ui.AllPicFragment"
+        android:name="com.example.cutenessoverload.ui.picfragment.AllPicFragment"
         android:label="All" />
 </navigation>
