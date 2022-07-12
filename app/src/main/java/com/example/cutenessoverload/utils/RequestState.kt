@@ -1,4 +1,4 @@
-package com.example.cutenessoverload.repository
+package com.example.cutenessoverload.utils
 
 import com.example.cutenessoverload.model.CuteGeneric
 import java.lang.Exception

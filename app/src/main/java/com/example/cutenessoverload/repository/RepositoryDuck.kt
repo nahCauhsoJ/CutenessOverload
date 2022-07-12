@@ -1,6 +1,7 @@
 package com.example.cutenessoverload.repository
 
 import com.example.cutenessoverload.api.APIServiceDuck
+import com.example.cutenessoverload.utils.RequestState
 import com.example.cutenessoverload.utils.toCuteGeneric
 import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.flow

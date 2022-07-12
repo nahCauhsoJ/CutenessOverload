@@ -9,6 +9,7 @@ import androidx.fragment.app.activityViewModels
 import androidx.viewpager2.widget.ViewPager2
 import com.example.cutenessoverload.databinding.FragmentViewPagerBinding
 import com.example.cutenessoverload.ui.picfragment.*
+import com.example.cutenessoverload.ui.savedpicfragment.*
 import com.example.cutenessoverload.utils.ViewPagerAdapter
 import com.example.cutenessoverload.viewmodel.CuteViewModel
 import com.google.android.material.tabs.TabLayoutMediator
@@ -49,11 +50,11 @@ class SavedPicFragment : Fragment() {
 
     private fun viewPagerSwitcher(position: Int) : Fragment =
         when (position) {
-            1 -> CatPicFragment()
-            2 -> DogPicFragment()
-            3 -> DuckPicFragment()
-            4 -> FoxPicFragment()
-            else -> AllPicFragment() // This includes 0
+            1 -> CatSavedPicFragment()
+            2 -> DogSavedPicFragment()
+            3 -> DuckSavedPicFragment()
+            4 -> FoxSavedPicFragment()
+            else -> AllSavedPicFragment() // This includes 0
         }
 
     companion object {

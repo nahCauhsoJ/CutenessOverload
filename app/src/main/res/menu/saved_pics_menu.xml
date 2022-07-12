@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/menu_unsave_pic"
+        android:icon="@drawable/heart_broken"
+        android:title="Forget"
+        app:showAsAction="always"/>
+    <item
+        android:id="@+id/menu_unsave_cancel"
+        android:icon="@drawable/cancel"
+        android:title="Cancel"
+        android:visible="false"
+        app:showAsAction="always"/>
+    <item
+        android:id="@+id/menu_unsave_confirm"
+        android:icon="@drawable/check"
+        android:title="DELETE"
+        android:visible="false"
+        app:showAsAction="always"/>
+</menu>

@@ -18,4 +18,6 @@ interface CuteDAO {
 
     @Delete
     suspend fun unsaveCute(cute: CuteEntity)
+    @Delete
+    suspend fun unsaveCute(cute: List<CuteEntity>)
 }

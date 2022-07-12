@@ -54,6 +54,16 @@
                 android:layout_marginTop="50dp"
                 android:text="Save"/>
 
+            <ProgressBar
+                android:id="@+id/has_pic_loading"
+                style="?android:attr/progressBarStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/cute_pic_refresh"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="50dp"
+                android:visibility="invisible" />
+
         </RelativeLayout>
     </LinearLayout>
 </androidx.core.widget.NestedScrollView>

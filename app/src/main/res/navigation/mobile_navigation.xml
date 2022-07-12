@@ -1,11 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
 <navigation xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/mobile_navigation"
-    app:startDestination="@id/allPicFragment">
+    app:startDestination="@id/picFragment">
     <fragment
-        android:id="@+id/allPicFragment"
-        android:name="com.example.cutenessoverload.ui.picfragment.AllPicFragment"
-        android:label="All" />
+        android:id="@+id/picFragment"
+        android:name="com.example.cutenessoverload.ui.PicFragment"
+        android:label="Pics">
+        <action
+            android:id="@+id/action_picFragment_to_savedPicFragment"
+            app:destination="@id/savedPicFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/savedPicFragment"
+        android:name="com.example.cutenessoverload.ui.SavedPicFragment"
+        android:label="Saved" >
+        <action
+            android:id="@+id/action_savedPicFragment_to_picFragment"
+            app:destination="@id/picFragment" />
+    </fragment>
 </navigation>

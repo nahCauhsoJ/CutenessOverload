@@ -1,7 +1,7 @@
 package com.example.cutenessoverload.repository
 
-import android.util.Log
 import com.example.cutenessoverload.api.APIServiceCat
+import com.example.cutenessoverload.utils.RequestState
 import com.example.cutenessoverload.utils.toCuteGeneric
 import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.flow
